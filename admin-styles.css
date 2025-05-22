@@ -1,0 +1,326 @@
+/* Admin Panel Styles */
+:root {
+    --primary-color: #0a2463;
+    --secondary-color: #3e92cc;
+    --accent-color: #d8315b;
+    --light-color: #fffaff;
+    --dark-color: #1e1b18;
+    --success-color: #28a745;
+    --warning-color: #ffc107;
+    --danger-color: #dc3545;
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--dark-color);
+    background-color: #f5f5f5;
+    direction: rtl;
+    text-align: right;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-family: inherit;
+}
+
+/* Admin Login Styles */
+.admin-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+}
+
+.login-container {
+    background-color: var(--light-color);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-container h2 {
+    color: var(--primary-color);
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.input-group input:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 2px rgba(62, 146, 204, 0.2);
+}
+
+#login-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    transition: var(--transition);
+}
+
+#login-btn:hover {
+    background-color: var(--secondary-color);
+}
+
+.error-message {
+    color: var(--danger-color);
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    min-height: 20px;
+}
+
+.back-link {
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+.back-link:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+/* Admin Panel Styles */
+.admin-header {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    padding: 20px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.admin-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.admin-header h1 {
+    font-size: 1.8rem;
+}
+
+#logout-btn {
+    padding: 8px 16px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: var(--light-color);
+    border-radius: 4px;
+    transition: var(--transition);
+}
+
+#logout-btn:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+main.container {
+    padding: 40px 15px;
+}
+
+.admin-section {
+    background-color: var(--light-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.admin-section h2 {
+    color: var(--primary-color);
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 2px rgba(62, 146, 204, 0.2);
+}
+
+.help-text {
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: 5px;
+}
+
+#generate-btn {
+    padding: 12px 24px;
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 4px;
+    margin-top: 10px;
+    transition: var(--transition);
+}
+
+#generate-btn:hover {
+    background-color: var(--secondary-color);
+}
+
+.json-container {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#json-output {
+    white-space: pre-wrap;
+    font-family: monospace;
+    font-size: 0.9rem;
+    color: #333;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+#copy-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 6px 12px;
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+    border-radius: 4px;
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+#copy-btn:hover {
+    background-color: var(--primary-color);
+}
+
+.instructions {
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.instructions h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.instructions ol {
+    padding-right: 20px;
+}
+
+.instructions li {
+    margin-bottom: 15px;
+}
+
+.instructions ul {
+    list-style-type: disc;
+    padding-right: 20px;
+    margin-top: 10px;
+}
+
+.instructions ul li {
+    margin-bottom: 8px;
+}
+
+.admin-footer {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+.admin-footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .admin-header .container {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    
+    .admin-section {
+        padding: 20px;
+    }
+    
+    .admin-footer .container {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+}

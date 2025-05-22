@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FFY JERSEY - חולצות כדורגל רטרו</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>FFY JERSEY</h1>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#" class="active">דף הבית</a></li>
+                    <li><a href="#">חולצות רטרו</a></li>
+                    <li><a href="#">ילדים</a></li>
+                    <li><a href="#">נבחרות לאומיות</a></li>
+                    <li><a href="#">מועדונים</a></li>
+                    <li><a href="#">חולצות לפי ליגה</a></li>
+                    <li><a href="#">קופסת הפתעה</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <a href="#" class="icon-search"><i class="fas fa-search"></i></a>
+                <a href="#" class="icon-cart"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="animated-text">חולצות כדורגל רטרו</h2>
+                <p class="animated-text">FFY JERSEY מציג חולצות כדורגל רטרו. משלוח חינם ברחבי הארץ. מגוון רחב של חולצות כדורגל רטרו מכל הליגות והאוספים. הזמינו עכשיו, המלאי מתעדכן.</p>
+                <div class="hero-benefit animated-text">
+                    <span>✨ הדפסת שם ומספר חינם</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products">
+        <div class="container">
+            <h2 class="section-title">חולצות מומלצות</h2>
+            <div class="product-grid" id="product-grid">
+                <!-- Products will be loaded dynamically from jerseys.json -->
+                <div class="loading">טוען מוצרים...</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Modal -->
+    <div class="modal" id="product-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <div class="product-image">
+                    <img src="" alt="" id="modal-image">
+                </div>
+                <div class="product-details">
+                    <h3 id="modal-title"></h3>
+                    <p class="price" id="modal-price"></p>
+                    <p class="description" id="modal-description"></p>
+                    <div class="sizes">
+                        <h4>בחר מידה:</h4>
+                        <div class="size-options" id="modal-sizes">
+                            <!-- Size options will be added dynamically -->
+                        </div>
+                    </div>
+                    <button class="whatsapp-btn" id="whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i> הזמנה דרך וואטסאפ
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>FFY JERSEY</h2>
+                </div>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2025 FFY JERSEY. כל הזכויות שמורות.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Admin Access (Hidden) -->
+    <div class="admin-access">
+        <a href="admin.html" class="admin-link">מנהל</a>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

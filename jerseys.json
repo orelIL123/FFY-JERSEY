@@ -1,0 +1,58 @@
+[
+  {
+    "title": "יובנטוס בית 19/20",
+    "price": 159,
+    "sizes": ["S", "M", "L", "XL"],
+    "description": "חולצת בית רשמית של יובנטוס מעונת 2019/2020 עם הפסים האייקוניים בשחור-לבן ופרטים בכתום וירוק.",
+    "imageUrl": "https://i.imgur.com/JQlTGsH.jpg"
+  },
+  {
+    "title": "יובנטוס בית 18/19",
+    "price": 159,
+    "sizes": ["S", "M", "L", "XL"],
+    "description": "חולצת בית קלאסית של יובנטוס מעונת 2018/2019 עם עיצוב הפסים המסורתי בשחור-לבן.",
+    "imageUrl": "https://i.imgur.com/8XA2jzP.jpg"
+  },
+  {
+    "title": "יובנטוס בית 20/21",
+    "price": 159,
+    "sizes": ["S", "M", "L", "XL"],
+    "description": "חולצת בית של יובנטוס מעונת 2020/2021 עם פרשנות מודרנית לפסים הקלאסיים בשחור-לבן ופרטים בזהב.",
+    "imageUrl": "https://i.imgur.com/YGfHLuV.jpg"
+  },
+  {
+    "title": "מילאן בית 09/10",
+    "price": 159,
+    "sizes": ["S", "M", "L", "XL"],
+    "description": "חולצת בית רטרו של מילאן מעונת 2009/2010 עם הפסים הקלאסיים באדום-שחור וחסות bwin.",
+    "imageUrl": "https://i.imgur.com/dYYbN3P.jpg"
+  },
+  {
+    "title": "ברזיל בית 1998",
+    "price": 159,
+    "sizes": ["S", "M", "L", "XL"],
+    "description": "חולצת בית אייקונית של נבחרת ברזיל ממונדיאל 1998 עם הצבעים הקלאסיים בצהוב עם שוליים ירוקים.",
+    "imageUrl": "https://i.imgur.com/Ld8GjyP.jpg"
+  },
+  {
+    "title": "ברזיל בית 2002",
+    "price": 159,
+    "sizes": ["S", "M", "L", "XL"],
+    "description": "חולצת בית אגדית של נבחרת ברזיל ממונדיאל 2002, כשזכתה בפעם החמישית בתואר.",
+    "imageUrl": "https://i.imgur.com/eTFkASi.jpg"
+  },
+  {
+    "title": "ברזיל חוץ 2002",
+    "price": 159,
+    "sizes": ["S", "M", "L", "XL"],
+    "description": "חולצת חוץ של נבחרת ברזיל ממונדיאל 2002 עם העיצוב הקלאסי בכחול.",
+    "imageUrl": "https://i.imgur.com/cSgGhQP.jpg"
+  },
+  {
+    "title": "ברזיל בית 2006",
+    "price": 159,
+    "sizes": ["S", "M", "L", "XL"],
+    "description": "חולצת בית של נבחרת ברזיל ממונדיאל 2006 עם הצבעים המסורתיים בצהוב וירוק.",
+    "imageUrl": "https://i.imgur.com/LTfMZQx.jpg"
+  }
+]

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FFY JERSEY - פאנל ניהול</title>
+    <link rel="stylesheet" href="css/admin-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Admin Login Section -->
+    <div class="admin-login" id="admin-login">
+        <div class="login-container">
+            <h2>גישת מנהל</h2>
+            <div class="input-group">
+                <label for="access-code">הזן קוד גישה</label>
+                <input type="password" id="access-code" placeholder="הזן קוד 4 ספרות">
+            </div>
+            <button id="login-btn">כניסה</button>
+            <p class="error-message" id="error-message"></p>
+            <a href="index.html" class="back-link">חזרה לאתר הראשי</a>
+        </div>
+    </div>
+
+    <!-- Admin Panel Section (Hidden by default) -->
+    <div class="admin-panel" id="admin-panel" style="display: none;">
+        <header class="admin-header">
+            <div class="container">
+                <h1>פאנל ניהול FFY JERSEY</h1>
+                <button id="logout-btn">התנתק</button>
+            </div>
+        </header>
+
+        <main class="container">
+            <section class="admin-section">
+                <h2>הוסף חולצה חדשה</h2>
+                <form id="jersey-form">
+                    <div class="form-group">
+                        <label for="jersey-title">כותרת החולצה</label>
+                        <input type="text" id="jersey-title" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="jersey-price">מחיר (₪)</label>
+                        <input type="number" id="jersey-price" min="0" step="1" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="jersey-sizes">מידות (מופרדות בפסיקים)</label>
+                        <input type="text" id="jersey-sizes" placeholder="S, M, L, XL" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="jersey-description">תיאור (אופציונלי)</label>
+                        <textarea id="jersey-description" rows="4"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="jersey-image">כתובת תמונה</label>
+                        <input type="url" id="jersey-image" required>
+                        <p class="help-text">העלה את התמונה לשירות אירוח תמונות והדבק את הכתובת כאן.</p>
+                    </div>
+                    
+                    <button type="button" id="generate-btn">צור נתוני חולצה</button>
+                </form>
+            </section>
+            
+            <section class="admin-section">
+                <h2>JSON שנוצר</h2>
+                <div class="json-container">
+                    <pre id="json-output">// נתוני החולצה יופיעו כאן</pre>
+                    <button id="copy-btn">העתק ללוח</button>
+                </div>
+                
+                <div class="instructions">
+                    <h3>כיצד לעדכן את האתר</h3>
+                    <ol>
+                        <li>
+                            <strong>הכנת תמונה:</strong> העלה את תמונת החולצה לשירות אירוח תמונות 
+                            (כמו Imgur, Cloudinary וכו') והעתק את כתובת התמונה הישירה.
+                        </li>
+                        <li>
+                            <strong>מילוי טופס:</strong> מלא את כל השדות בטופס למעלה ולחץ על "צור נתוני חולצה".
+                        </li>
+                        <li>
+                            <strong>העתקת JSON:</strong> לחץ על "העתק ללוח" כדי להעתיק את אובייקט ה-JSON שנוצר.
+                        </li>
+                        <li>
+                            <strong>עדכון jerseys.json:</strong> 
+                            <ul>
+                                <li>עבור למאגר ה-GitHub שלך: <a href="https://github.com/orelIL123/FFY-JERSEY" target="_blank">https://github.com/orelIL123/FFY-JERSEY</a></li>
+                                <li>נווט לקובץ data/jerseys.json</li>
+                                <li>לחץ על כפתור העריכה (אייקון עיפרון)</li>
+                                <li>הוסף את אובייקט ה-JSON שהועתק למערך (אל תשכח להוסיף פסיק אם זה לא הפריט הראשון)</li>
+                                <li>בצע commit לשינויים</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>המתן לפריסה:</strong> GitHub Pages יעדכן אוטומטית את האתר שלך תוך מספר דקות.
+                        </li>
+                    </ol>
+                </div>
+            </section>
+        </main>
+
+        <footer class="admin-footer">
+            <div class="container">
+                <p>&copy; 2025 פאנל ניהול FFY JERSEY</p>
+                <a href="index.html" class="back-link">חזרה לאתר הראשי</a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/admin.js"></script>
+</body>
+</html>
