@@ -1,11 +1,15 @@
 [
-  {
-    "title": "יובנטוס בית 19/20",
-    "price": 159,
-    "sizes": ["S", "M", "L", "XL"],
-    "description": "חולצת בית רשמית של יובנטוס מעונת 2019/2020 עם הפסים האייקוניים בשחור-לבן ופרטים בכתום וירוק.",
-    "imageUrl": "https://i.imgur.com/JQlTGsH.jpg"
-  },
+   {
+  "title": "מכבי חיפה",
+  "price": 159,
+  "sizes": [
+    "S",
+    "M",
+    "L"
+  ],
+  "description": "",
+  "imageUrl": "https://cdn.shopify.com/s/files/1/0736/0358/0196/files/1_2676f208-654a-41de-a94b-5569a681c838.jpg?v=1722506328"
+}
   {
     "title": "יובנטוס בית 18/19",
     "price": 159,
