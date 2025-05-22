@@ -101,7 +101,8 @@ function generateJerseyJSON() {
     const sizes = sizesString.split(',').map(size => size.trim()).filter(size => size !== '');
     
     const description = jerseyDescription.value.trim();
-    const imageUrl = jerseyImage.value.trim();
+    const imageName = jerseyImage.value.trim();
+    const imageUrl = imageName ? `images/${imageName}` : '';
     
     // Create jersey object
     const jersey = {
