@@ -121,7 +121,7 @@ function orderViaWhatsApp() {
         return;
     }
     
-    const message = `שלום, אני מעוניין להזמין:\n\n${currentProduct.title}\nמידה: ${selectedSize}\nמחיר: ₪${currentProduct.price}\n\nאנא ספק מידע נוסף.`;
+    const message = `שלום, אני מעוניין להזמין:\n\n${currentProduct.title}\nמידה: ${selectedSize}\nמחיר: ₪${currentProduct.price}\n\n${currentProduct.imageUrl ? `תמונה: ${currentProduct.imageUrl}\n\n` : ''}אנא ספק מידע נוסף.`;
     
     // Encode the message for WhatsApp URL
     const encodedMessage = encodeURIComponent(message);
